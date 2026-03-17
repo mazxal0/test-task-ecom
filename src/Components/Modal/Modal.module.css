@@ -1,0 +1,257 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    z-index: 1000;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #f3f3f3;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+
+.closeButton:hover {
+    background: #e5e5e5;
+}
+
+.imageWrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 320px;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    word-break: break-word;
+}
+
+.category {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    word-break: break-word;
+}
+
+.price {
+    margin: 8px 0 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+}
+
+.buyButton {
+    margin-top: 12px;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    background: #1677ff;
+    color: white;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.buyButton:hover {
+    background: #0958d9;
+}
+
+@media (max-width: 992px) {
+    .modal {
+        max-width: 760px;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .image {
+        max-width: 260px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 12px;
+        align-items: flex-end;
+    }
+
+    .modal {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 16px 16px 0 0;
+        gap: 14px;
+        padding: 16px;
+        overflow-x: hidden;
+    }
+
+    .closeButton {
+        top: 10px;
+        right: 10px;
+        width: 34px;
+        height: 34px;
+        font-size: 22px;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 100%;
+        height: 220px;
+        max-height: 220px;
+    }
+
+    .info {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+        padding-right: 40px;
+    }
+
+    .category {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .buyButton {
+        width: 100%;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 0;
+    }
+
+    .modal {
+        max-height: 100vh;
+        min-height: 70vh;
+        border-radius: 14px 14px 0 0;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .imageWrapper {
+        padding: 12px;
+    }
+
+    .image {
+        height: 180px;
+        max-height: 180px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .category {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .buyButton {
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-height: 700px) {
+    .modal {
+        max-height: calc(100vh - 16px);
+    }
+
+    .image {
+        max-height: 180px;
+    }
+}

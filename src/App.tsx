@@ -58,6 +58,9 @@ function App() {
             />
           ))}
         </div>
+        <footer className={classnames.footer}>
+          Made by <a className={classnames.link} href={'https://github.com/mazxal0'}>Mazxal</a>
+        </footer>
       </div>
     </>
   );
