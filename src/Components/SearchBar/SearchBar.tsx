@@ -1,4 +1,9 @@
-export default function SearchBar() {
+export function SearchBar() {
 
-  return <div>Hello</div>
+  return (
+    <>
+      <p>Find the items</p>
+      <input/>
+    </>
+  )
 }

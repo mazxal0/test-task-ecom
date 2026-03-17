@@ -7,8 +7,8 @@ export function GetAllItems(): Item[] {
       id: 1,
       title: "Смарт‑часы X100",
       price: 7490,
-      category: "аджеты",
-      image: "https://example.com/img/1.jpg",
+      category: "Гаджеты",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4XX1VOBRmOOktqJmi1t0NivshKylBF4pWQ&s",
       description: "Водонепроницаемые, GPS, 7‑дневный аккумулятор",
     }
   ]

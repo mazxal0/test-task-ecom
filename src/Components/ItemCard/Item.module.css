@@ -1,0 +1,35 @@
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 200ms ease-in;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.container_title_price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.price {
+    margin-left: auto;
+
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
