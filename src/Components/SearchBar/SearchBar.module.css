@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.label {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input {
+    padding: 10px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input:hover {
+    border-color: #999;
+}
+
+.input:focus {
+    border-color: #1677ff;
+}
